@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: eccho "Dumela, lefase"
+        run: echo "Dumela, lefase"
       - name: multiline scrippt
         run: |
           node -v
