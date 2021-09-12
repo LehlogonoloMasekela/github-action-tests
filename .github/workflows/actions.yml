@@ -1,7 +1,10 @@
 name: Actions Workflow
 
-on: [push]
-
+on:
+  schedule:
+    - 0 18 * * *
+    - 0 12 * * *
+    
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
