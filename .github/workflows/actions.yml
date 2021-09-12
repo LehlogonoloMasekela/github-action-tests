@@ -17,7 +17,7 @@ jobs:
           echo $GITHUB_TOKEN
           echo $GITHUB_SHA
           echo $GITHUB_WORKSPACE
-          echo "${{github.token}}"
+          echo "${github.token}"
       - name: checkout
         uses: actions/checkout@v1
 
@@ -32,4 +32,4 @@ jobs:
           who-to-greet: hlonza
       - name : log greeting time
         id: greetone
-        run: echo "${{steps.greet.outputs.time}}"
+        run: echo "${steps.greet.outputs.time}"
