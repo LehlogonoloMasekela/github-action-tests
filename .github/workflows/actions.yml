@@ -12,5 +12,5 @@ jobs:
         with: 
           who-to-greet: hlonza
       - name : log greeting time
-        id: greet
+        id: greetone
         run: echo "${{steps.greet.outputs.time}}"
